@@ -1,0 +1,80 @@
+\documentclass[10pt]{article}
+\input{estrutura/preamble.tex}
+\input{estrutura/especificacoes.tex}
+\usepackage{capt-of}%%To get the caption
+
+\hypersetup{pdfauthor={Matheus Jonatha},
+            pdftitle={Equação do 2º grau},
+            pdfsubject={PrepIF - Material de Matemática},
+            pdfkeywords={equação,segundo,grau,mathjonatha,mthsjonatha,matematica,prepif,if,preparatorio,online,instituto,federal,militares,material},
+            pdfproducer={Produzido e gerado no Overleaf},
+            pdfcreator={pdflatex}}
+\begin{document}
+    \import{estrutura/}{wallpaper.tex} % CAPA
+        \begin{center}
+            {\LARGE {\sc equação do \( 2^\circ \) grau}}
+        \end{center}
+
+
+
+\begin{definicao}
+    Se o termo de maior grau de uma equação polinomial está elevado ao quadrado, essa equação é chamada de equação do \( 2^\circ \) grau ou quadrática.
+    \[ ax^2+bx+c = 0\mathrm{, onde}~ a,b,c \in \mathbb{R}  ~\mathrm{e}~ a \neq 0 \]
+    Em outras palavras, temos que numa equação do \( 2^\circ \) grau, o \( x \) é a incógnita e representa um valor desconhecido. Já as letras \( a \),\( b \) e \( c \) são chamadas de coeficientes da equação. Os coeficientes são números reais e o coeficiente \( a \) tem que ser diferente de zero.
+\end{definicao}
+
+\section*{Equações completas}
+Toda equação do segundo grau (ou equação quadrática) apresenta duas raízes (zeros), sendo que em alguns casos ambas podem ser iguais (raiz dupla), ou seja, possuem o exato mesmo valor. Abaixo você encontra as características de uma \textbf{equação do segundo grau completa} e os passos necessários para encontrar suas raízes.
+\begin{enumerate}[label=\textbf{(\roman*)}]
+    \item Apresenta todos os coeficientes (\( a \), \( b \)  e  \( c \)) diferentes de \( 0 \).
+    
+        Lembre-se, o grau do polinômio informa a quantidade de raízes que ele possui.
+    \begin{enumerate}
+        \item Exemplos
+        \begin{enumerate}
+            \item \( 9x^2 + 5x -6 = 0 \), onde \( a = 9\), \( b = 5\) e  \( c = -6\).
+            \item \( x^2 + x +1 = 0 \), onde \( a = 1\), \( b = 1\) e  \( c = 1\).
+            \item \( \frac{2}{3}x^2 - 3x -1 = 0 \) , onde \( a = \frac{2}{3}\),\( b = -3\) e  \( c = -1\).
+            \item \( -x^2 + 4x -1 = 0 \) , onde \( a = -1\), \( b = 4\) e  \( c = -1\).
+        \end{enumerate}
+         \item Note que os termos podem aparecer em ordens diversas.
+        \begin{enumerate}
+            \item \( 9x^2 + 5x = +6 \), onde \( a = 9\),\( b = 5\) e  \( c = -6\).
+            \item \( x^2= -1 -x \), onde \( a = 1\),\( b = 1\) e  \( c = 1\).
+            \item \( \frac{2}{3}x^2-1 = 3x\), onde \( a = \frac{2}{3}\),\( b = -3\) e  \( c = -1\).
+            \item \( 4x -1 = x^2 \), onde \( a = -1\),\( b = 4\) e  \( c = -1\).
+        \end{enumerate}
+    
+    \end{enumerate}
+    \begin{obs}
+        Tome cuidado quando estiver analisando quem são os coeficientes, uma forma de facilitar o reconhecimento é pensando que o valor de \( a \) é sempre o que está junto ao \( x^2 \), o valor de \( b \) está com o \( x \) e o \( c \) não está junto de \( x \) algum.
+    \end{obs}
+    
+    
+    \item Para encontrar os zeros de uma equação do 2º grau completa, devemos encontrar o seu delta (\( \Delta \)), calculado pela seguinte fórmula:
+     \[ \Delta= b^2-4 \cdot a \cdot c \]
+     Após o cálculo do delta (\( \Delta \)), será usada a fórmula de Bhaskara, representada abaixo:
+     \[ x= \frac{-b \pm \sqrt{\Delta}}{2 \cdot a}\]
+     Em seguida, essa fórmula é dividida em duas equações distintas (uma com a raiz quadrada do delta positiva e outra com ela negativa), as quais serão as duas raízes da equação.
+    \[ x_1= \frac{-b + \sqrt{\Delta}}{2 \cdot a}\]
+    \[ x_2= \frac{-b - \sqrt{\Delta}}{2 \cdot a}\]
+    Nos casos em que o delta é igual a zero, é onde temos o caso em que as raízes são duplas, visto que \( x_1 \) e \( x_2 \) terão os mesmos valores.
+\end{enumerate}
+\newpage
+\import{estrutura/}{wallpaper.tex} % CAPA
+\section*{Equações incompletas}
+
+
+
+\vfill
+\section*{Referências}
+\noindent Disponível em: \url{https://www.todamateria.com.br/equacao-do-segundo-grau/}. Acesso em: 25 de julho de 2020.
+
+\noindent Disponível em: \url{https://matematicabasica.net/equacao-do-2-grau-segundo-grau/}. Acesso em: 28 de julho de 2020.
+
+\noindent Disponível em: \url{https://www.somatematica.com.br/fundam/equacoes2/equacoes2.php}. Acesso em: 30 de julho de 2020.
+
+\noindent Disponível em: \url{https://www.todamateria.com.br/formula-de-bhaskara/}. Acesso em: 30 de julho de 2020.
+
+\noindent Disponível em: \url{https://www.todamateria.com.br/equacao-do-segundo-grau/}. Acesso em: 30 de julho de 2020.
+\end{document}
