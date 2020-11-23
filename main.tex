@@ -4,37 +4,37 @@
 \usepackage{capt-of}%%To get the caption
 
 \hypersetup{pdfauthor={Matheus Jonatha},
-            pdftitle={Áreas de Figuras Planas},
+            pdftitle={Conjutos Numéricos},
             pdfsubject={PrepIF - Material de Matemática},
-            pdfkeywords={area,planas,geometria,euclidiana,mathjonatha,mthsjonatha,matematica,prepif,if,preparatorio,online,instituto,federal,militares,material},
+            pdfkeywords={conjuntos,numéricos,numericos,mathjonatha,mthsjonatha,matematica,prepif,if,preparatorio,online,instituto,federal,militares,material},
             pdfproducer={Produzido e gerado no Overleaf},
             pdfcreator={pdflatex}}
 \begin{document}
-    \import{estrutura/}{background.tex} % CAPA
+    \AddToShipoutPictureBG{\includegraphics[width=\paperwidth,height=\paperheight]{estrutura/background.pdf}};
         \begin{center}
-            {\LARGE {\sc áreas de figuras planas}}
+            {\LARGE {\sc conjuntos numéricos}}
         \end{center}
 
 \begin{definicao}
-\textbf{Superfície} de um polígono ou região poligonal plana é areunião do polígono com o seu interior.
+Conjunto é o agrupamento de elementos que possuem as mesmas características. Quando esses elementos são números, essa união passa a ser conhecida como \textbf{conjunto numérico}. Na matemática, pode-se agrupar os números de diversas formas, gerando assim muitos conjuntos numéricos.
 \end{definicao}
 
 \section*{Conjunto dos números naturais (\( \mathbb{N} \))}
-É o conjunto representado pela letra \( \mathbb{N}\) e dele podemos citar algumas características importante:
+É o conjunto representado pela letra \( \mathbb{N}\) e dele podemos citar algumas características importantes:
 
     \begin{enumerate}[label=\textbf{(\Roman*)}]
         \item Representamos sua forma como sendo \( \mathbb{N} = \{0, 1, 2, 3, 4, \ldots, n, \ldots\}\).
-        \item É um conjunto infinito. Os pontinhos (\(\ldots\)) informa que continua infinitamente.
+        \item É um conjunto infinito. Os pontinhos (\(\ldots\)) informam que continua infinitamente.
         \item Sabemos exatamente quais são os sucessores \((n+1)\) e os antecessores \((n-1)\) de cada um dos seus elementos.
         
         \begin{obs}
-        Essa informação de como escrever o sucessor e o antecessor de um número é importante para questões que necessitam de generalização nos cálculos. Bem como saber a representação genérica de um número par(\(2n\)) e de um número ímpar(\(2n+1\)).
+        Essa informação de como escrever o sucessor e o antecessor de um número é importante para questões que necessitam de generalização nos cálculos, Bem como saber a representação genérica de um número par (\(2n\)) e de um número ímpar (\(2n+1\)).
         \end{obs}
         \item O número zero é o único que não tem antecessor.
         \item Ao realizar às operações de edição ou multiplicação entre dois de seus elementos, obtemos como resultado um elemento desse mesmo conjunto.
     \end{enumerate}
 \subsection*{Subconjuntos de \( \mathbb{N} \)}
-Subconjunto é a parte de um conjunto, com características próprias. Veja alguns exemplos abaixo:
+Subconjunto é a parte de um conjunto com características próprias. Veja alguns exemplos abaixo:
 
 \begin{multicols}{2}
     \begin{itemize}
@@ -66,12 +66,12 @@ Subconjunto é a parte de um conjunto, com características próprias. Veja algu
 
 
 \section*{Conjunto dos números inteiros (\( \mathbb{Z} \))}
-Representamos esse conjunto com \( \mathbb{Z}\), o conjunto dos números naturais é um subconjunto dos inteiros (Figura \ref{fig:conjuntosInteiros}), as características desse conjunto são:
+O conjunto dos números naturais é um subconjunto dos inteiros (Figura \ref{fig:conjuntosInteiros}), representados pelo \( \mathbb{Z}\). As suas características são:
 
     \begin{enumerate}[label=\textbf{(\Roman*)}]
-        \item O conjunto é formado pelos números naturais e seus simétricos negativos(opostos), incluindo o zero.
+        \item O conjunto é formado pelos números naturais e seus simétricos negativos (opostos), incluindo o zero.
             \begin{obs}
-                Há uma diferença entre \textbf{oposto de um número} e \textbf{inverso de um número}, um número é oposto de outro quando a soma desses dois números resultar em zero, já o inverso será uma fração com numerador 1 e o denominador o número que será invertido.
+                Há uma diferença entre \textbf{oposto de um número} e \textbf{inverso de um número}. Um número é oposto de outro quando a soma desses dois números resultar em zero, já o inverso será uma fração com numerador 1 e o denominador o número que será invertido.
                 \textbf{Exemplos:}
                 \begin{enumerate}
                     \begin{multicols}{2}
@@ -83,12 +83,12 @@ Representamos esse conjunto com \( \mathbb{Z}\), o conjunto dos números naturai
                 \end{enumerate}
             \end{obs}
 \newpage
-\import{estrutura/}{background.tex} % CAPA
+
         \item Sua forma é representada como \( \mathbb{Z} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}\).
         \item É um conjunto infinito.
         \item Sabemos exatamente quais são os sucessores e os antecessores de cada um dos seus elementos.
         \item O número zero possui sucessor e antecessor.
-        \item Ao realizar às operações de adição,subtração e multiplicação entre dois de seus elementos, obtemos como resultado um elemento desse mesmo conjunto.
+        \item Ao realizar as operações de adição, subtração e multiplicação entre dois de seus elementos, obtemos como resultado um elemento desse mesmo conjunto.
     \end{enumerate}
 \subsection*{Subconjuntos de \( \mathbb{Z} \)}
 
@@ -102,7 +102,7 @@ Representamos esse conjunto com \( \mathbb{Z}\), o conjunto dos números naturai
             \( \mathbb{Z}_+ = \{0, 1, 2, 3, \ldots \} \)
             
             \begin{obs}
-            Note que este subconjunto é o mesmo que o conjunto dos números naturais, podemos dizer que \( \mathbb{N} = \mathbb{Z}_+\)
+            Note que esse subconjunto é o mesmo que o conjunto dos números naturais, logo, podemos dizer que \( \mathbb{N} = \mathbb{Z}_+\)
             \end{obs}
         \item Conjunto dos números inteiros positivos:
         
@@ -110,7 +110,7 @@ Representamos esse conjunto com \( \mathbb{Z}\), o conjunto dos números naturai
         \item Conjunto dos números inteiros não positivos:
         
             \( \mathbb{Z}_- = \{\ldots, -4, -3, -2, -1, 0 \} \)
-        \item Conjunto dos números inteiros negativas:
+        \item Conjunto dos números inteiros negativos:
         
             \( \mathbb{Z}^*_- = \{\ldots, -5, -4, -3, -2, -1\} \)
         
@@ -127,22 +127,22 @@ Representamos esse conjunto com \( \mathbb{Z}\), o conjunto dos números naturai
 \end{multicols} 
 
 \section*{Conjunto dos números racionais (\( \mathbb{Q} \))}
-O conjunto dos números racionais pode ser escrito como o quociente(fração) entre dois números inteiros, \( a \) e \(  b \in \mathbb{Z} \) e \( b \neq 0 \), em outras palavras, definimos como:
+O conjunto dos números racionais pode ser escrito como o quociente (fração) entre dois números inteiros, \( a \) e \(  b \in \mathbb{Z} \) e \( b \neq 0 \), em outras palavras, definimos como:
 \[ \mathbb{Q} = \left\{ \frac{a}{b} \mid  a \textrm{ e } b \in \textrm{ e } b \neq 0 \right\} \]
 
 \begin{enumerate}[label=\textbf{(\Roman*)}]
-        \item O conjunto dos números inteiros(\(\mathbb{Z}\)) está contido neste conjunto, ou seja, é um subconjunto do conjunto dos números racionais.
+        \item O conjunto dos números inteiros (\(\mathbb{Z}\)) está contido nesse conjunto, ou seja, é um subconjunto do conjunto dos números racionais.
         \begin{obs}
-        Podemos escrever a situação acima como \( \mathbb{Z} \subset \mathbb{Q} \) ou \( \mathbb{Q} \supset \mathbb{Z} \). O simbolo \( \subset \) lê-se \textbf{está contido} e \( \supset \) lê-se \textbf{contém}.
+        Podemos escrever a situação acima como \( \mathbb{Z} \subset \mathbb{Q} \) ou \( \mathbb{Q} \supset \mathbb{Z} \). O símbolo \( \subset \) lê-se \textbf{está contido} e \( \supset \) lê-se \textbf{contém}.
         \end{obs}
         \item Entre dois números inteiros ou racionais, existem infinitos números racionais.
         \item Podemos escrever qualquer número inteiro na forma racional, basta adicionar o número 1 ao denominador.
         
         \textbf{Exemplo:} O número inteiro \( 28 \) pode ser escrito como sendo \( \frac{28}{1} \).
-        \item  Ao realizar às operações de adição,subtração e multiplicação entre dois números racionais, tem como resultado um número inteiro ou racional.
+        \item  Ao realizar as operações de adição, subtração e multiplicação entre dois números racionais, obtemos como resultado um número inteiro ou racional.
 \end{enumerate}
 \newpage
-\import{estrutura/}{background.tex} % CAPA
+
 \subsection*{Subconjuntos de \( \mathbb{Q} \)}
 \begin{multicols}{2}
     \begin{itemize}
@@ -191,7 +191,7 @@ O conjunto dos números irracionais é aquele cujos elementos são números deci
             \item A soma, subtração, multiplicação ou divisão de dois irracionais pode resultar em um racional ou em um irracional.
     \end{enumerate}
 \section*{Conjunto dos números reais (\( \mathbb{R} \))}
-O conjunto dos números reais (\( \mathbb{R} \)) é formado pela reunião(união) do conjunto dos números racionais(\( \mathbb{Q}\)) com o conjunto dos números irracionais (\( \mathbb{I}\)), ou seja, por todos os conjuntos que estudamos até o momento. A relação entre todos os conjuntos pode ser representada como mostrado na figura \ref{fig:conjuntosReais}:
+O conjunto dos números reais (\( \mathbb{R} \)) é formado pela reunião(união) do conjunto dos números racionais (\( \mathbb{Q}\)) com o conjunto dos números irracionais (\( \mathbb{I}\)), ou seja, por todos os conjuntos que estudamos até o momento. A relação entre todos os conjuntos pode ser representada como mostrado na figura \ref{fig:conjuntosReais}:
 \begin{multicols}{2}
 \subsection*{Subconjuntos de \(\mathbb{R}\)}
 \begin{itemize}
@@ -212,15 +212,15 @@ O conjunto dos números reais (\( \mathbb{R} \)) é formado pela reunião(união
     \end{minipage}%
 \end{multicols} 
 \newpage
-\import{estrutura/}{background.tex} % CAPA
+
 
  \begin{center}
             {\LARGE {\sc hora de praticar}}
         \end{center}
 
-Nesta seção você encontra exercícios de fixação, tente realizar todos pois o conteúdo mostrado anteriormente é utilizado como ferramenta no desenvolvimento das questões. Importante lembrar que uma questão dificilmente vai te pedir uma informação sobre conjuntos númericos de forma direta,esse conteúdo é utilizado como \textbf{ferramenta} para encontrar o resultado final (não é o único caminho, mas é um atalho).
+Nesta seção, você encontra exercícios de fixação. Tente realizar todos, pois o conteúdo mostrado anteriormente é utilizado como ferramenta no desenvolvimento das questões. É importante lembrar que uma questão dificilmente vai te pedir uma informação sobre conjuntos numéricos de forma direta,esse conteúdo é utilizado como \textbf{ferramenta} para encontrar o resultado final (não é o único caminho, mas é um atalho).
 
-As resoluções das questões você encontra no nosso \href{https://prepif.herokuapp.com/instituicoes}{site}, no enunciado das questões é informado o instituto, o ano e o número da questão. Ex.: \textbf{IFRN2020Q12}
+As resoluções das questões podem ser encontradas no nosso \href{https://prepif.herokuapp.com/instituicoes}{site}. No enunciado das questões, são informados o instituto, o ano e o número da questão (ex.: \textbf{IFRN2020Q12}).
 
 \begin{multicols}{2}
 \setlength\columnseprule{1pt}
@@ -284,7 +284,7 @@ Um triângulo possui dois lados medindo \( 4 \mathrm{cm}\) que formam um ângulo
 
 \vfill
 \section*{Referências}
-\noindent Disponível em: \url{https://bit.ly/3kPGGEj}. Acesso em: 16 de agosto de 2020.
+\noindent Disponível em: \url{https://beduka.com/blog/materias/matematica/resumo-de-conjuntos-numericos/}. Acesso em: 8 de agosto de 2020.
 
 \noindent Disponível em: 
 \url{https://bit.ly/2Cp7I3X}. Acesso em: 9 de agosto de 2020.
